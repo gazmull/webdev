@@ -1,0 +1,89 @@
+body {
+  min-width: 1131px; /* rofl just realised this is the solution; js solution was inefficient */
+  color: rgb(43, 71, 83);
+  font-family: 'Candara';
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* navigator */
+
+#menu {
+  border-bottom: 1px solid #222222;
+  height: 100px;
+}
+
+#menu > ul {
+  background-color: rgb(238, 238, 238);
+  height: 100px;
+  overflow: hidden;
+  padding: 0;
+  z-index: 1;
+}
+
+#menu > ul > li {
+  display: inline-block;
+  padding: 10px;
+}
+
+#menu > ul > li a,
+#menu > ul > li a:link
+#menu > ul > li a:visited {
+  color: #000;
+  text-decoration: none;
+  top: 5px;
+}
+
+#menu > ul > li a:hover {
+  color: #c9af1e;
+}
+
+#menu-logo {
+  position: relative;
+  top: 20px;
+}
+
+/* content */
+
+.title {
+  font-size: 16px;
+}
+
+.subtitle {
+  font-size: 15px;
+}
+
+.sub-container-wrapper {
+  padding: 25px;
+  overflow: hidden;
+  position: relative;
+}
+
+.sub-container {
+  height: 300px;
+  width: 200px;
+  display: inline-block;
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+#feat {
+  background-color: rgb(50, 70, 81);
+  color: #fff;
+}
+
+#feat > .sub-container {
+  width: 500px;
+  height: 450px;
+  top: 15px;
+  text-align: left;
+}
+
+#list-feat {
+  list-style-type: circle;
+}
+
+#list-feat li {
+  padding: 8px;
+}
