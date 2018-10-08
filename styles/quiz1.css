@@ -21,24 +21,23 @@ body {
   z-index: 1;
 }
 
-#menu > ul > li {
+#list-menu li {
   display: inline-block;
   padding: 10px;
 }
 
-#menu > ul > li a,
-#menu > ul > li a:link
-#menu > ul > li a:visited {
+#list-menu li a,
+#list-menu li a:link,
+#list-menu li a:visited {
   color: #000;
   text-decoration: none;
-  top: 5px;
 }
 
-#menu > ul > li a:hover {
+#list-menu li a:hover {
   color: #c9af1e;
 }
 
-#menu-logo {
+#logo-menu {
   position: relative;
   top: 20px;
 }
@@ -81,9 +80,6 @@ body {
 }
 
 #list-feat {
+  line-height: 200%;
   list-style-type: circle;
-}
-
-#list-feat li {
-  padding: 8px;
 }
