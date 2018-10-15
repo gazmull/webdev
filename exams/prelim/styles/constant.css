@@ -1,0 +1,64 @@
+body {
+  margin: auto;
+  min-width: 1360px;
+  background-color: rgb(42, 41, 39);
+  font-family: 'Arial';
+  color: white;
+}
+
+/* Logo - Start */
+
+#logo {
+  height: 75px;
+  padding: 20px 0 0 20px;
+}
+
+.logo-text-big {
+  letter-spacing: -2px;
+  font-size: 48px;
+}
+
+.logo-text-small {
+  color: rgb(141, 141, 140);
+  font-size: 16px;
+  position: relative;
+  top: -2px;
+}
+
+/* Logo - End */
+
+/* Navigator - Start */
+
+#navigator {
+  background: url('../images/main_menu_bg.gif');
+  text-align: center;
+}
+
+#navigator > ul > li {
+  display: inline-block;
+  padding: 15px 55px;
+  font-family: 'Times New Roman';
+  font-size: 26px;
+}
+
+#navigator > ul > li a:link,
+#navigator > ul > li a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+#navigator > ul > li a:hover {
+  color: rgb(159, 125, 88);
+}
+
+/* Navigator - End */
+
+/* Slider - Start */
+
+#slider-content-wrapper {
+  background: url('../images/banner_01.jpg');
+  width: 100%;
+  /* height: 380px; */
+}
+
+/* Slider - End */
