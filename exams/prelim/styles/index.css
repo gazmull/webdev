@@ -1,14 +1,21 @@
+/* Per Content Specifics - Start */
+
 #content { color: #818181; }
 
 .sub-content-wrapper {
   width: 300px;
   display: inline-block;
+  overflow: hidden;
   padding: 20px 35px;
   position: relative;
   vertical-align: top;
 }
 
 .sub-content-space { width: 0px; }
+
+/* Per Content Specifics - End */
+
+/* Upper Content - Start */
 
 #upper-content-wrapper {
   background-color: #fbf8ef;
@@ -39,6 +46,11 @@
 
 .title-small { font-size: 18px; }
 
+.subtitle-text-wrapper {
+  height: 140px;
+  overflow: hidden;
+}
+
 .subtitle-button {
   background: url('../images/btn_brown.gif');
   width: 90px;
@@ -48,21 +60,26 @@
 }
 
 .subtitle-button-text {
-  position: relative;
+  width: 75px;
+  height: 20px;
+  position: absolute;
   cursor: pointer;
   user-select: none;
   left: 8px;
   top: 5px;
   color: white;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .subtitle-button-text:hover { color: rgb(233, 208, 181); }
+
+/* Upper Content - End */
 
 /* Lower Content - Start */
 
 #lower-content-wrapper {
   height: 440px;
-  overflow: hidden;
   width: 1240px;
   margin: 20px auto;
 }
@@ -74,6 +91,8 @@
 }
 
 .sub-lower-content-wrapper { height: 400px; }
+
+/* News & Events Container - Start */
 
 .news-wrapper {
   width: 300px;
@@ -92,6 +111,8 @@
 .news-wrapper a:hover { color: #111; }
 
 .news-sub-wrapper {
+  height: 65px;
+  overflow: hidden;
   position: relative;
   top: 25px;
 }
@@ -109,13 +130,26 @@
   font-size: 14px;
 }
 
+/* News & Events Container - End */
+
+/* Special Service Container - Start */
+
 #special-service-list {
+  height: 224px;
   list-style-image: url('../images/bu_arrow.gif');
   list-style-position: inside;
   line-height: 180%;
+  overflow: hidden;
   padding: 5px;
   position: relative;
   top: -15px;
+}
+
+#special-service-list li {
+  width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 #special-service-list li a { color: #818181; }
@@ -141,3 +175,7 @@
   position: relative;
   top: 10px;
 }
+
+/* Special Service Container - End */
+
+/* Lower Content - End */
