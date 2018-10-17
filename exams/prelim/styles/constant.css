@@ -1,9 +1,10 @@
 body {
   margin: auto;
-  min-width: 1360px;
+  max-width: 1280px;
+  min-width: 1280px;
   background-color: rgb(42, 41, 39);
   font-family: 'Arial';
-  color: white;
+  color: rgb(248, 248, 248);
 }
 
 /* Logo - Start */
@@ -23,6 +24,7 @@ body {
   font-size: 16px;
   position: relative;
   top: -2px;
+  left: 5px;
 }
 
 /* Logo - End */
@@ -47,18 +49,133 @@ body {
   text-decoration: none;
 }
 
-#navigator > ul > li a:hover {
-  color: rgb(159, 125, 88);
-}
+#navigator > ul > li a:hover { color: rgb(159, 125, 88); }
 
 /* Navigator - End */
 
 /* Slider - Start */
 
 #slider-content-wrapper {
-  background: url('../images/banner_01.jpg');
-  width: 100%;
-  /* height: 380px; */
+  height: 380px;
+  position: relative;
 }
 
+#slider-image {
+  background: url('../images/banner_01.jpg');
+  background-size: 100% 100%;
+  height: 380px;
+  z-index: -1;
+}
+
+#slider-image-browser {
+  position: absolute;
+  right: 450px;
+  top: 320px;
+  z-index: 0;
+}
+
+#slider-image-browser div {
+  display: inline-block;
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+#slider-image-ctrl-left { width: 10px; }
+
+#slider-image-ctrl-left img { margin-left: -10px; }
+
+#slider-image-ctrl-right { width: 10px; }
+
+.slider-image-active,
+.slider-image-inactive { width: 20px; }
+
+.slider-image-active { top: -2px; }
+
+.slider-image-inactive { top: -4px; }
+
+.slider-image-active img { margin-top: -18px; }
+
+.slider-image-inactive img { margin-top: 2px; }
+
+/* Services List Dialog */
+
+#slider-content {
+  width: 360px;
+  height: 340px;
+  background-color: #646462;
+  border: 3px solid white;
+  position: absolute;
+  overflow: hidden;
+  right: 20px;
+  top: 20px;
+  text-align: justify;
+}
+
+#slider-content-text-wrapper {
+  padding: 0 20px;
+  position: relative;
+  top: -5px;
+}
+
+#slider-content-button {
+  background: url('../images/btn_orange.gif');
+  width: 90px;
+  height: 27px;
+  position: relative;
+  left: 25px;
+  top: 15px;
+}
+
+#slider-content-button-text {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  left: 7px;
+  top: 5px;
+  color: black;
+  font-weight: bolder;
+}
+
+#slider-content-button-text:hover { color: rgb(159, 125, 88); }
+
 /* Slider - End */
+
+/* Main Content - Start */
+
+#content {
+  background-color: white;
+  height: 800px;
+}
+
+/* Main Content - End */
+
+/* Footer - Start */
+
+#footer {
+  background-color: #c3c3c3;
+  height: 70px;
+  position: relative;
+}
+
+#footer a:link,
+#footer a:visited {
+  text-decoration: none;
+  color: rgb(248, 248, 248);
+}
+
+#footer a:hover { color: rgb(159, 125, 88); }
+
+#footer-copyright {
+  position: absolute;
+  padding: 25px 100px;
+}
+
+#footer-contact {
+  position: absolute;
+  right: 0px;
+  padding: 18px 100px;
+}
+
+/* Footer - End */
