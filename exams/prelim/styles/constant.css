@@ -12,6 +12,7 @@ body {
 #logo {
   height: 75px;
   padding: 20px 0 0 20px;
+  user-select: none;
 }
 
 .logo-text-big {
@@ -71,6 +72,7 @@ body {
   position: absolute;
   right: 450px;
   top: 320px;
+  user-select: none;
   z-index: 0;
 }
 
@@ -128,21 +130,15 @@ body {
   position: relative;
   left: 25px;
   top: 15px;
-}
-
-#slider-content-button-text {
-  position: relative;
-  cursor: pointer;
-  user-select: none;
-  left: 7px;
-  top: 5px;
+  border: 0;
   color: black;
+  cursor: pointer;
   font-weight: bolder;
   overflow: hidden;
   white-space: nowrap;
 }
 
-#slider-content-button-text:hover { color: rgb(159, 125, 88); }
+#slider-content-button:hover { color: rgb(159, 125, 88); }
 
 /* Slider - End */
 

@@ -1,6 +1,6 @@
 #content { color: #818181; }
 
-h1 { color: #111; }
+.content h1 { color: #111; }
 
 .content-wrapper {
   display: inline-block;
@@ -16,12 +16,39 @@ h1 { color: #111; }
 }
 
 #services-list ul {
-  list-style: decimal outside url('../images/bg_circle.gif');
+  list-style: none outside;
+  padding: 0 0;
 }
 
-#services-list ul > li { padding: 7px 0; }
-#services-list ul > li > a:link { color: #111; }
+#services-list ul > li {
+  overflow: hidden;
+  padding: 10px 0;
+  white-space: nowrap;
+}
+#services-list ul > li > a:link,
+#services-list ul > li > a:visited { color: #111; }
 #services-list ul > li > a:hover { color: #ccc; }
+
+.services-list-button {
+  background-image: url('../images/bg_circle.gif');
+  background-size: cover;
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+}
+
+.services-list-button-label {
+  color: white;
+  font-size: 10px;
+  position: relative;
+  left: 7px;
+  top: 6px;
+}
+
+.services-list-button-text {
+  position: relative;
+  top: 8px;
+}
 
 #about {
   width: 600px;
@@ -33,11 +60,14 @@ h1 { color: #111; }
   display: inline-block;
   color: rgb(223, 167, 42);
   font-size: 14px;
-  padding-left: 0px;
+  padding-left: 20px;
   padding-top: 10px;
 }
 
-.about-list li { padding: 3px 0; }
+.about-list li {
+  padding: 3px 0;
+  white-space: nowrap;
+}
 
 .about-dialog {
   height: 150px;
@@ -61,17 +91,11 @@ h1 { color: #111; }
   float: right;;
   position: relative;
   top: 10px;
-}
-
-.about-dialog-button a {
-  width: 75px;
-  height: 20px;
-  position: absolute;
-  cursor: pointer;
-  user-select: none;
-  left: 8px;
-  top: 5px;
+  border: 0;
   color: white;
+  cursor: pointer;
   overflow: hidden;
   white-space: nowrap;
 }
+
+.about-dialog-button:hover { color: rgb(233, 208, 181); }
