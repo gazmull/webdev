@@ -1,0 +1,77 @@
+#content { color: #818181; }
+
+h1 { color: #111; }
+
+.content-wrapper {
+  display: inline-block;
+  height: 750px;
+  overflow: hidden;
+  padding: 0 50px;
+  vertical-align: top;
+}
+
+#services-list {
+  width: 450px;
+  float: left;
+}
+
+#services-list ul {
+  list-style: decimal outside url('../images/bg_circle.gif');
+}
+
+#services-list ul > li { padding: 7px 0; }
+#services-list ul > li > a:link { color: #111; }
+#services-list ul > li > a:hover { color: #ccc; }
+
+#about {
+  width: 600px;
+  float: right;
+}
+
+.about-list {
+  width: 235px;
+  display: inline-block;
+  color: rgb(223, 167, 42);
+  font-size: 14px;
+  padding-left: 0px;
+  padding-top: 10px;
+}
+
+.about-list li { padding: 3px 0; }
+
+.about-dialog {
+  height: 150px;
+  padding: 20px 0;
+}
+
+.about-dialog p {
+  float: right;
+  width: 500px;
+  margin: 0;
+}
+
+.dialog-title-big { font-size: 32px; }
+
+.dialog-title-small { font-size: 26px; }
+
+.about-dialog-button {
+  background: url('../images/btn_brown.gif');
+  width: 90px;
+  height: 26px;
+  float: right;;
+  position: relative;
+  top: 10px;
+}
+
+.about-dialog-button a {
+  width: 75px;
+  height: 20px;
+  position: absolute;
+  cursor: pointer;
+  user-select: none;
+  left: 8px;
+  top: 5px;
+  color: white;
+  overflow: hidden;
+  white-space: nowrap;
+}
