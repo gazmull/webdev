@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Modify Element</title>
+
+    <script type = 'text/javascript'>
+      const getId = e => document.getElementById(e);
+
+      const yes = () => getId('sample').innerText = 'Hello I\'m a script';
+      const no = () => getId('sample').innerText = 'Mouse On Button Again';
+
+      const yes2 = (hi, name) => getId('sample2').innerText = `${hi}, I'm ${name}`;
+      const no2 = () => getId('sample2').innerText = 'Mouse On Me Again';
+    </script>
+  </head>
+
+  <body>
+    <h1 id = 'sample'>Mouse On Button</h1>
+
+    <input type = 'button' onmouseover= 'yes();' onmouseout= 'no();'/>
+
+    <hr />
+
+    <h1 id = 'sample2' onmouseover = 'yes2("Hello", "a doge.");' onmouseout = 'no2();'>Mouse On Me</h1>
+  </body>
+</html>
