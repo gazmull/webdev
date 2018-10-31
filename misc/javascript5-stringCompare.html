@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Sample in Javascript</title>
+    
+    <script type = 'text/javascript'>
+      const get = element => document.getElementById(element);
+      const verify = expr => get('confirmLabel').innerText = expr ? 'Matched.' : 'Unmatched.';
+
+      const text = name => {
+        get('nameLabel').innerText = name;
+
+        const confirm = get('confirm').value;
+
+        verify(name == confirm);
+
+        if (name.length < 8)
+          return get('passLabel').innerText = 'Invalid. Length must be more than 7 characters.';
+
+        get('passLabel').innerText = 'Valid.';
+      };
+
+      const text2 = name => {
+        const main = get('main').value;
+
+        verify(name == main);
+      };
+    </script>
+  </head>
+
+  <body>
+    <input type = 'text' id = 'main' onkeyup = 'text(this.value);' />
+    <input type = 'text' id = 'confirm' onkeyup = 'text2(this.value);' />
+    <p id = 'nameLabel'></p>
+    <p id = 'confirmLabel'></p>
+    <p id = 'passLabel'></p>
+  </body>
+</html>
