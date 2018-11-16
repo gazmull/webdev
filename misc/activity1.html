@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <title>Activity1</title>
+    <script type = 'text/javascript' src = '../lib/jquery.min.js'></script>
+    <script type = 'text/javascript'>
+      const showIt = c => new Promise(resolve => {
+        const hidden = $(`div[class*='${c}']`);
+        hidden.removeClass('hidden');
+        hidden.addClass('visible');
+
+        resolve(1);
+      });
+      const hideIt = () => new Promise(resolve => {
+        const visible = $('.visible');
+        visible.removeClass('visible');
+        visible.addClass('hidden');
+
+        resolve(1);
+      });
+      const hoverTo = c => hideIt().then(() => showIt(c));
+    </script>
+    <style>
+      button { width: 100px; height: 50px; }
+      div { display: inline-block; }
+
+      .wrapper-main {
+        width: 920px;
+        height: 360px;
+        overflow: hidden;
+        position: relative;
+        top: 10px;
+      }
+
+      .wrapper {
+       width: 920px;
+       height: 360px;
+       position: absolute;
+       top: 0;
+       left: 0;
+      }
+
+      .hidden { animation: slide-out 0.8s forwards; }
+
+      .visible { animation: slide-in 0.8s forwards; }
+
+      @keyframes slide-in {
+        from { transform: translateY(100%); }
+        to { transform: translateY(0); }
+      }
+
+      @keyframes slide-out {
+        to { transform: translateY(-100%); }
+      }
+    </style>
+  </head>
+  <body bgcolor = #595959 text = #dfdfd5 style = 'text-align: center;'>
+    <font face = 'comic sans ms'>
+      <h1>My Gallery</h1>
+      <button onclick="hoverTo('f')">First 3</button>
+      <button onclick="hoverTo('s')">Second 3</button>
+      <button onclick="hoverTo('t')">Third 3</button>
+      <br />
+      <div class = 'wrapper-main'>
+        <div class = 'wrapper hidden f'>
+          <a href = images/beginner/1.jpg><img src = images/beginner/1.jpg width = 300 height = 350 border = 1 /></a>
+          <a href = images/beginner/2.jpg><img src = images/beginner/2.jpg width = 300 height = 350 border = 1 /></a>
+          <a href = images/beginner/3.jpg><img src = images/beginner/3.jpg width = 300 height = 350 border = 1 /></a>
+        </div>
+        <div class = 'wrapper hidden s'>
+          <a href = images/beginner/4.jpg><img src = images/beginner/4.jpg width = 300 height = 350 border = 1 /></a>
+          <a href = images/beginner/5.jpg><img src = images/beginner/5.jpg width = 300 height = 350 border = 1 /></a>
+          <a href = images/beginner/6.jpg><img src = images/beginner/6.jpg width = 300 height = 350 border = 1 /></a>
+        </div>
+        <div class = 'wrapper hidden t'>
+          <a href = images/beginner/7.jpg><img src = images/beginner/7.jpg width = 300 height = 350 border = 1 /></a>
+          <a href = images/beginner/8.jpg><img src = images/beginner/8.jpg width = 300 height = 350 border = 1 /></a>
+          <a href = images/beginner/2.jpg><img src = images/beginner/2.jpg width = 300 height = 350 border = 1 /></a>
+        </div>
+      </div>
+    </font>
+    </body>
+</html>
