@@ -1,0 +1,11 @@
+div { padding: 5 5; }
+
+span { font-weight: bolder; }
+
+input {
+  margin-left: 30;
+  width: 170;
+}
+#date { margin-left: 35; }
+#quantity { margin-left: 15; }
+#cash { margin-left: 32; }
