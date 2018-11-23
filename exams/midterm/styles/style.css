@@ -1,0 +1,159 @@
+body { background-color: #2e242b; }
+.container-fluid { padding: 0 !important; }
+.row { margin: 0 !important; }
+
+/* Menu */
+
+.nav { max-width: 130px; }
+
+.navbar {
+  top: 35%;
+  opacity: 0.75;
+  z-index: 1080;
+  position: fixed;
+}
+
+.nav-link {
+  background-color: #777;
+  border-left: 0px solid #777;
+  color: #fff;
+  font-weight: 400;
+  opacity: 0.75;
+  transition: all 1s ease, font-weight 0.05s linear, border-left 0.3s ease;
+  width: 100%;
+}
+
+.nav-link:hover {
+  border-left: 2px solid #ff00ae;
+  color: #ff00ae;
+  font-weight: bold;
+  opacity: 1;
+  transition: all 0.3s ease, font-weight 0.05s linear;
+}
+
+.nav .active {
+  border-left: 2px solid #ff00ae;
+  color: #ff00ae;
+  font-weight: bold;
+}
+
+/* Tooltip (navigation text) */
+
+#pop {
+  background-color: #222;
+  border: 1px solid #ff00ae;
+  display: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ff00ae;
+  width: 200px;
+  z-index: 1090;
+}
+
+.content {
+  background-color: #eedfee;
+  padding: 10px;
+}
+
+/* Hobbies */
+
+#hb49 .carousel-item img {
+  height: 400px;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+/* Hobbies II */
+
+.img-wrapper {
+  width: 300px;
+  height: 300px;
+  margin: 10px auto;
+  overflow: hidden;
+  position: relative;
+}
+
+#hb50 div img {
+  object-fit: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 300px;
+  position: absolute;
+}
+
+.img-overlay {
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.img-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+  z-index: 1090;
+}
+
+.img-overlay:hover {
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+/* Hobbies III */
+
+#thumbnail {
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+
+.list-inline {
+  color: #000;
+  text-decoration: none !important;
+  font-weight: 400;
+  transition: font-weight 0.05s linear, color 0.3s ease-out;
+}
+
+.list-inline:hover {
+  color: #ff00ae;
+  font-weight: bold;
+}
+
+/* Hobbies IV */
+
+.card-group { margin: 20px auto; }
+
+.card-img-top {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.btn-discord {
+  background-color: rgb(97, 97, 209);
+  color: white;
+}
+
+.btn-discord:hover{
+  background-color: rgb(111, 0, 255);
+  color: white;
+}
+
+.footer-container {
+  color: #eee;
+  position: fixed;
+  opacity: 0.5;
+  bottom: 0;
+  z-index: -1;
+}
