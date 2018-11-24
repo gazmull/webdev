@@ -1,4 +1,8 @@
-body { background-color: #2e242b; }
+body {
+  background-color: #2e242b;
+  width: calc(100vw - 34px);
+  height: 100%;
+}
 .container-fluid { padding: 0 !important; }
 .row { margin: 0 !important; }
 
@@ -50,14 +54,13 @@ body { background-color: #2e242b; }
   z-index: 1090;
 }
 
-.content {
-  background-color: #eedfee;
-  padding: 10px;
-}
+.content { background-color: #eedfee; }
 
 /* Hobbies */
 
-#hb49 .carousel-item img {
+.carousel1-container { padding-bottom: 15px; }
+
+.carousel-item img {
   height: 400px;
   object-fit: cover;
   opacity: 0.8;
@@ -114,6 +117,7 @@ body { background-color: #2e242b; }
   background-color: transparent;
   background-size: contain;
   background-repeat: no-repeat;
+  margin-bottom: 15px;
   position: relative;
   width: 600px;
   height: 600px;
